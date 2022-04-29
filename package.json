@@ -2,5 +2,20 @@
   "name": "cooperation-monorepo-template",
   "version": "0.1.0",
   "repository": "git@github.com:ever0de/cooperation-monorepo-template.git",
-  "author": "Jiseok CHOI <jiseok.dev@gmail.com>"
+  "author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+  "private": true,
+  "engines": {
+    "node": ">=16.15",
+    "pnpm": ">=6.14"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "@types/node": "^17.0.30",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
 }
