@@ -1,4 +1,4 @@
-export type Method = "GET" | "POST" | "DELETE";
+export type Method = "GET" | "POST" | "DELETE" | "PATCH" | "PUT" | "OPTIONS";
 
 export namespace Example {
   export const METHOD: Method = "GET";
