@@ -5,7 +5,7 @@
       "@ever0de/common": ["./common/src"]
     }
   },
-  "include": ["**/*"],
+  "include": ["**/*.ts"],
   "exclude": [
     "**/dist",
     "**/build",
