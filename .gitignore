@@ -1,0 +1,5 @@
+# Node
+node_modules
+
+# Package Manager
+.pnpm-debug.log*
