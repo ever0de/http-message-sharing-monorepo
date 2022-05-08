@@ -3,6 +3,7 @@ bracketSameLine: false
 singleQuote: false
 trailingComma: "all"
 semi: true
+tabWidth: 4
 
 # @trivago/prettier-plugin-sort-imports
 importOrder: ["<THIRD_PARTY_MODULES>", "@/(.*)$", "^[./](.*)$"]

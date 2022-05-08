@@ -1,4 +1,7 @@
 **/node_modules
 **/dist
+**/*.md
+**/*.json
+**/*.yaml
 
 pnpm-lock.yaml
