@@ -3,3 +3,6 @@ node_modules
 
 # Package Manager
 .pnpm-debug.log*
+
+# MAC-OS
+.DS_Store
