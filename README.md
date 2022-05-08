@@ -1,4 +1,4 @@
-# cooperation-monorepo-template
+# http-message-sharing-monorepo
 
 This is a template of monorepo that can share Request and Response modules.
 
