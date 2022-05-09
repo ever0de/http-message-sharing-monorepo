@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2018",
-    "module": "commonjs",
+    "target": "esnext",
+    "module": "esnext",
     "lib": ["esnext"],
     "esModuleInterop": true,
     "isolatedModules": true,
     "sourceMap": true,
     "declaration": true,
     "strict": true,
-    "noUncheckedIndexedAccess": false,
+    "noUncheckedIndexedAccess": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "useUnknownInCatchVariables": false,
+    "useUnknownInCatchVariables": true,
     "skipDefaultLibCheck": true
   },
   "exclude": ["**/dist", "**/node_modules"]
