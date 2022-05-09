@@ -12,7 +12,8 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "useUnknownInCatchVariables": true,
-    "skipDefaultLibCheck": true
+    "skipDefaultLibCheck": true,
+    "experimentalDecorators": true
   },
   "exclude": ["**/dist", "**/node_modules"]
 }
