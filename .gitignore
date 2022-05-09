@@ -1,5 +1,6 @@
 # Node
 node_modules
+**/dist
 
 # Package Manager
 .pnpm-debug.log*
