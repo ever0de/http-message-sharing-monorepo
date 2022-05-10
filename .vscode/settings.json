@@ -6,11 +6,15 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
