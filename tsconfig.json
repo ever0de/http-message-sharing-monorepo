@@ -6,11 +6,9 @@
       "@ever0de/common": ["common/src"]
     }
   },
-  "include": ["**/*.ts"],
   "exclude": [
     "**/dist",
     "**/build",
     "**/node_modules",
-    "**/{client,common,server}"
   ]
 }
