@@ -7,10 +7,13 @@ useTabs: false
 tabWidth: 4
 endOfLine: lf
 
-# @trivago/prettier-plugin-sort-imports
+# sort imports plugin #
+plugins:
+  - "@trivago/prettier-plugin-sort-imports"
 importOrder: ["<THIRD_PARTY_MODULES>", "@/(.*)$", "^[./](.*)$"]
 importOrderSeparation: true
 importOrderSortSpecifiers: true
+# sort imports plugin #
 
 overrides:
   - files: ["*.json", "*.yaml", "*.yml"]
