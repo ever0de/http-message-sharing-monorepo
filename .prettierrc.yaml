@@ -11,3 +11,8 @@ endOfLine: lf
 importOrder: ["<THIRD_PARTY_MODULES>", "@/(.*)$", "^[./](.*)$"]
 importOrderSeparation: true
 importOrderSortSpecifiers: true
+
+overrides:
+  - files: ["*.json", "*.yaml", "*.yml"]
+    options:
+      tabWidth: 2
