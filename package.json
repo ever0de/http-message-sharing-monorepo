@@ -8,6 +8,8 @@
     "pnpm": ">=6.14"
   },
   "scripts": {
+    "common": "pnpm --filter common",
+    "server": "pnpm --filter server",
     "format": "prettier --write ."
   },
   "devDependencies": {
