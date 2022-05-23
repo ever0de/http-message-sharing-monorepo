@@ -22,7 +22,7 @@
     "@ever0de/common": "workspace:*",
     "@nestjs/common": "^8.1.1",
     "@nestjs/core": "^8.1.1",
-    "@nestjs/platform-express": "^8.1.1",
+    "@nestjs/platform-fastify": "^8.4.5",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.4.0"
@@ -47,7 +47,7 @@
     "ts-jest": "^28.0.2"
   },
   "peerDependencies": {
-    "typescript": "^4"
+    "typescript": "^4.6.4"
   },
   "jest": {
     "moduleFileExtensions": [
