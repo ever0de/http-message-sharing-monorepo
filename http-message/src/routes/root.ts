@@ -1,4 +1,4 @@
-export type Method = "GET" | "POST" | "DELETE" | "PATCH" | "PUT" | "OPTIONS";
+import { Method } from "../method";
 
 export namespace Health {
     export const METHOD: Method = "GET";
