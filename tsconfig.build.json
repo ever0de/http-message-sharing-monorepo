@@ -8,13 +8,13 @@
     "sourceMap": true,
     "declaration": true,
     "strict": true,
-	  "removeComments": true,
+    "removeComments": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "useUnknownInCatchVariables": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
   "exclude": ["**/dist", "**/node_modules"]
 }

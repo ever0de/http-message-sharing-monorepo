@@ -1,12 +1,12 @@
 {
-	"extends": "../tsconfig.json",
-	"compilerOptions": {
-	  "module": "commonjs",
-	  "outDir": "dist",
-	  "emitDecoratorMetadata": true,
-	  "experimentalDecorators": true,
-	  "sourceMap": true,
-	  "allowSyntheticDefaultImports": true,
-	  "incremental": true,
-	}
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "incremental": true
   }
+}

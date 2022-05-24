@@ -6,12 +6,22 @@ importers:
     specifiers:
       '@trivago/prettier-plugin-sort-imports': ^3.2.0
       '@types/node': ^17.0.35
+      '@typescript-eslint/eslint-plugin': ^5.25.0
+      '@typescript-eslint/parser': ^5.25.0
+      eslint: ^7.32.0
+      eslint-config-prettier: ^8.3.0
+      eslint-plugin-prettier: ^3.4.1
       prettier: ^2.6.2
       ts-node: ^10.8.0
       typescript: ^4.6.4
     devDependencies:
       '@trivago/prettier-plugin-sort-imports': 3.2.0_prettier@2.6.2
       '@types/node': 17.0.35
+      '@typescript-eslint/eslint-plugin': 5.25.0_yjwxmgi7yxjs2zgsjaaxse7r4a
+      '@typescript-eslint/parser': 5.25.0_e4zyhrvfnqudwdx5bevnvkluy4
+      eslint: 7.32.0
+      eslint-config-prettier: 8.5.0_eslint@7.32.0
+      eslint-plugin-prettier: 3.4.1_evcial7aw3q6fcauxv2c7fxuoe
       prettier: 2.6.2
       ts-node: 10.8.0_ihi2kx3po6rqbrzdqgpcfvwinm
       typescript: 4.6.4
@@ -28,11 +38,6 @@ importers:
       '@types/express': ^4.17.13
       '@types/jest': ^27.5.1
       '@types/supertest': ^2.0.11
-      '@typescript-eslint/eslint-plugin': ^5.25.0
-      '@typescript-eslint/parser': ^5.25.0
-      eslint: ^7.32.0
-      eslint-config-prettier: ^8.3.0
-      eslint-plugin-prettier: ^3.4.1
       jest: ^28.1.0
       prettier: ^2.4.1
       reflect-metadata: ^0.1.13
@@ -41,7 +46,6 @@ importers:
       source-map-support: ^0.5.20
       supertest: ^6.1.6
       ts-jest: ^28.0.2
-      typescript: ^4.6.4
     dependencies:
       '@ever0de/http-message': link:../http-message
       '@nestjs/common': 8.4.5_47vcjb2de6lyibr6g4enoa5lyu
@@ -52,22 +56,16 @@ importers:
       rxjs: 7.5.5
     devDependencies:
       '@nestjs/cli': 8.2.6
-      '@nestjs/schematics': 8.0.11_typescript@4.6.4
+      '@nestjs/schematics': 8.0.11
       '@nestjs/testing': 8.4.5_ydewkhgqdrhc2o62hf5fyq4ami
       '@types/express': 4.17.13
       '@types/jest': 27.5.1
       '@types/supertest': 2.0.12
-      '@typescript-eslint/eslint-plugin': 5.25.0_yjwxmgi7yxjs2zgsjaaxse7r4a
-      '@typescript-eslint/parser': 5.25.0_e4zyhrvfnqudwdx5bevnvkluy4
-      eslint: 7.32.0
-      eslint-config-prettier: 8.5.0_eslint@7.32.0
-      eslint-plugin-prettier: 3.4.1_evcial7aw3q6fcauxv2c7fxuoe
       jest: 28.1.0
       prettier: 2.6.2
       source-map-support: 0.5.21
       supertest: 6.2.3
-      ts-jest: 28.0.2_qy5m32hwmbz5mebulkdtchzcz4
-      typescript: 4.6.4
+      ts-jest: 28.0.2_w64jruqtrapystldtllk4zq6ya
 
   http-message:
     specifiers: {}
@@ -932,6 +930,20 @@ packages:
       - supports-color
     dev: false
 
+  /@nestjs/schematics/8.0.11:
+    resolution: {integrity: sha512-W/WzaxgH5aE01AiIErE9QrQJ73VR/M/8p8pq0LZmjmNcjZqU5kQyOWUxZg13WYfSpJdOa62t6TZRtFDmgZPoIg==}
+    peerDependencies:
+      typescript: ^3.4.5 || ^4.3.5
+    dependencies:
+      '@angular-devkit/core': 13.3.5
+      '@angular-devkit/schematics': 13.3.5
+      fs-extra: 10.1.0
+      jsonc-parser: 3.0.0
+      pluralize: 8.0.0
+    transitivePeerDependencies:
+      - chokidar
+    dev: true
+
   /@nestjs/schematics/8.0.11_rdhioqn4mnnehcosh27dxkrt2m:
     resolution: {integrity: sha512-W/WzaxgH5aE01AiIErE9QrQJ73VR/M/8p8pq0LZmjmNcjZqU5kQyOWUxZg13WYfSpJdOa62t6TZRtFDmgZPoIg==}
     peerDependencies:
@@ -939,21 +951,6 @@ packages:
     dependencies:
       '@angular-devkit/core': 13.3.5_chokidar@3.5.3
       '@angular-devkit/schematics': 13.3.5_chokidar@3.5.3
-      fs-extra: 10.1.0
-      jsonc-parser: 3.0.0
-      pluralize: 8.0.0
-      typescript: 4.6.4
-    transitivePeerDependencies:
-      - chokidar
-    dev: true
-
-  /@nestjs/schematics/8.0.11_typescript@4.6.4:
-    resolution: {integrity: sha512-W/WzaxgH5aE01AiIErE9QrQJ73VR/M/8p8pq0LZmjmNcjZqU5kQyOWUxZg13WYfSpJdOa62t6TZRtFDmgZPoIg==}
-    peerDependencies:
-      typescript: ^3.4.5 || ^4.3.5
-    dependencies:
-      '@angular-devkit/core': 13.3.5
-      '@angular-devkit/schematics': 13.3.5
       fs-extra: 10.1.0
       jsonc-parser: 3.0.0
       pluralize: 8.0.0
@@ -4539,7 +4536,7 @@ packages:
     hasBin: true
     dev: true
 
-  /ts-jest/28.0.2_qy5m32hwmbz5mebulkdtchzcz4:
+  /ts-jest/28.0.2_w64jruqtrapystldtllk4zq6ya:
     resolution: {integrity: sha512-IOZMb3D0gx6IHO9ywPgiQxJ3Zl4ECylEFwoVpENB55aTn5sdO0Ptyx/7noNBxAaUff708RqQL4XBNxxOVjY0vQ==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
@@ -4569,7 +4566,6 @@ packages:
       lodash.memoize: 4.1.2
       make-error: 1.3.6
       semver: 7.3.7
-      typescript: 4.6.4
       yargs-parser: 20.2.9
     dev: true
 
