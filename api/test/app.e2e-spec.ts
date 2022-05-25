@@ -1,4 +1,8 @@
 import { INestApplication } from "@nestjs/common";
+import {
+    FastifyAdapter,
+    NestFastifyApplication,
+} from "@nestjs/platform-fastify";
 import { Test } from "@nestjs/testing";
 import request from "supertest";
 
@@ -12,14 +16,24 @@ describe("AppController (e2e)", () => {
             imports: [AppModule],
         }).compile();
 
-        app = moduleFixture.createNestApplication();
+        app = moduleFixture.createNestApplication<NestFastifyApplication>(
+            new FastifyAdapter(),
+        );
         await app.init();
+        await app.getHttpAdapter().getInstance().ready();
     });
 
-    it("/ (GET)", () => {
+    it("[GET] /", () => {
         return request(app.getHttpServer())
             .get("/")
             .expect(200)
             .expect("Hello World!");
+    });
+
+    it("[GET] /health", () => {
+        return request(app.getHttpServer())
+            .get("/health")
+            .expect(200)
+            .expect(JSON.stringify({ success: true }));
     });
 });
