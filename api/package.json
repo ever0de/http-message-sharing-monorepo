@@ -35,6 +35,7 @@
     "fastify-swagger": "^5.2.0",
     "jest": "^28.1.0",
     "prettier": "^2.4.1",
+    "query-string": "^7.1.1",
     "source-map-support": "^0.5.20",
     "supertest": "^6.1.6",
     "ts-jest": "^28.0.2",

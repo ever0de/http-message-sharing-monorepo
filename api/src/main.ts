@@ -1,3 +1,4 @@
+import { Example, Health } from "@ever0de/http-message/lib/routes/root";
 import { NestFactory } from "@nestjs/core";
 import {
     FastifyAdapter,
@@ -18,7 +19,8 @@ async function bootstrap() {
     const config = new DocumentBuilder()
         .setTitle("HTTP message sharing example")
         .setVersion("0.0.0")
-        .addTag("health")
+        .addTag(Example.PATH)
+        .addTag(Health.PATH)
         .build();
 
     const document = SwaggerModule.createDocument(app, config);

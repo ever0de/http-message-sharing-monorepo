@@ -1,14 +1,14 @@
 import { GenerateMethod } from "@decorater/method";
-import * as HttpMessage from "@ever0de/http-message";
+import { Health } from "@ever0de/http-message/lib/routes/root";
 import { Controller } from "@nestjs/common";
 import { ApiResponse, ApiTags } from "@nestjs/swagger";
 
 import { HealthResponse } from "./response";
 
-@ApiTags("health")
-@Controller(HttpMessage.Root.Health.PATH)
+@ApiTags(Health.PATH)
+@Controller(Health.PATH)
 export class HealthController {
-    @GenerateMethod(HttpMessage.Root.Example.METHOD)
+    @GenerateMethod(Health.Root.METHOD)
     @ApiResponse({ status: 200, type: HealthResponse })
     health(): HealthResponse {
         return { success: true };

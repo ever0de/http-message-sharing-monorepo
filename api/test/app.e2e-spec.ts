@@ -4,6 +4,7 @@ import {
     NestFastifyApplication,
 } from "@nestjs/platform-fastify";
 import { Test } from "@nestjs/testing";
+import queryString from "query-string";
 import request from "supertest";
 
 import { AppModule } from "../src/app.module";
@@ -35,5 +36,14 @@ describe("AppController (e2e)", () => {
             .get("/health")
             .expect(200)
             .expect(JSON.stringify({ success: true }));
+    });
+
+    it("[GET] /example", () => {
+        const name = "john";
+        const url = `/example?${queryString.stringify({ name })}`;
+        return request(app.getHttpServer())
+            .get(url)
+            .expect(200)
+            .expect(JSON.stringify({ name }));
     });
 });
