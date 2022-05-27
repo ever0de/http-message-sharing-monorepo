@@ -21,8 +21,6 @@ export namespace Example {
         };
     }
 
-    // export interface Response {}
-
     export interface Response {
         name: string;
     }
