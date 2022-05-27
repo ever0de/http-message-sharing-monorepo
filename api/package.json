@@ -5,6 +5,7 @@
   "author": "Jiseok CHOI <jiseok.dev@gmail.com>",
   "scripts": {
     "prebuild": "rimraf dist",
+    "nest": "nest",
     "build": "nest build",
     "start": "nest start",
     "start:dev": "nest start --watch",
