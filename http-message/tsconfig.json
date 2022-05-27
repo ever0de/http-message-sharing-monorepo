@@ -14,8 +14,8 @@
     "useUnknownInCatchVariables": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
-    "outDir": "dist"
+    "outDir": "lib"
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["**/dist", "**/node_modules"]
+  "exclude": ["lib", "node_modules"]
 }
