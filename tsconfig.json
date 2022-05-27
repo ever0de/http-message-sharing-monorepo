@@ -1,9 +1,3 @@
 {
-  "extends": "./tsconfig.build.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@ever0de/common": ["common/src"]
-    }
-  }
+  "extends": "./tsconfig.build.json"
 }
