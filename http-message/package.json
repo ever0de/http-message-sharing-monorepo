@@ -3,8 +3,15 @@
   "version": "0.0.0",
   "repository": "git@github.com:ever0de/cooperation-monorepo-template.git",
   "author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+  "main": "src/index.ts",
   "scripts": {
-    "prebuild:ts": "rm -rf dist",
+    "prebuild:ts": "rm -rf lib",
     "build:ts": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "typescript": "^4.3.5"
   }
 }
