@@ -4,6 +4,10 @@
     "outDir": "dist",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "incremental": true
-  }
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@decorater/*": ["src/decorater/*"]
+    }
+  },
 }
