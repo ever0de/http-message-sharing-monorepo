@@ -18,17 +18,32 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: pnpm/action-setup@v2.1.0
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.1.0
         with:
-          version: 6.14
+          version: 7.1.5
+          run_install: false
+
       - name: Setup node 16
         uses: actions/setup-node@v2
         with:
           node-version: "16"
           cache: "pnpm"
-      - run: pnpm install
-      - run: pnpm api build
-      - run: pnpm api test
-      - run: pnpm api test:e2e
-      - run: pnpm api test:cov
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build `api` workspace
+        run: pnpm api build
+
+      - name: Run unit-test
+        run: pnpm api test
+
+      - name: Run integration-test
+        run: pnpm api test:e2e
+
+      - name: Generate coverage
+        run: pnpm api test:cov
