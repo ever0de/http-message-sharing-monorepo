@@ -7,8 +7,9 @@
     "pnpm": ">=6.14"
   },
   "scripts": {
-    "http-message": "pnpm --filter http-message",
+    "postinstall": "pnpm http-message build",
     "api": "pnpm --filter api",
+    "http-message": "pnpm --filter http-message",
     "format": "prettier --write .",
     "lint": "eslint \"{http-message,api}/**/*.ts\" --fix",
     "clean": "rm -rf node_modules **/node_modules && rm -rf **/dist **/lib"
