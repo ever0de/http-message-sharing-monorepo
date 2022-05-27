@@ -5,9 +5,10 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "incremental": true,
-    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "baseUrl": "src",
     "paths": {
-      "@decorater/*": ["src/decorater/*"]
+      "@decorater/*": ["decorater/*"]
     }
   },
 }
