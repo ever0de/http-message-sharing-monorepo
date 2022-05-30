@@ -17,7 +17,7 @@ describe("ExampleService", () => {
         expect(service).toBeDefined();
     });
 
-    it("exampel", () => {
+    it("example", () => {
         const name = "john";
         expect(service.example({ name }).name).toBe(name);
     });
