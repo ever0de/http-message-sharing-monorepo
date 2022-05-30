@@ -12,6 +12,7 @@
     "api": "pnpm --filter api",
     "http-message": "pnpm --filter http-message",
     "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "eslint \"{http-message,api}/**/*.ts\" --fix",
     "clean": "rm -rf node_modules **/node_modules && rm -rf **/dist **/lib"
   },
