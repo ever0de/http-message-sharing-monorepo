@@ -1,7 +1,7 @@
 import { Method } from "../method";
 
 export namespace Health {
-    export const PATH = "/health";
+    export const PREFIX = "/health";
 
     export namespace Root {
         export const METHOD: Method = "GET";
@@ -16,7 +16,7 @@ export namespace Health {
 }
 
 export namespace Example {
-    export const PATH = "/example";
+    export const PREFIX = "/example";
 
     export namespace Root {
         export const METHOD: Method = "GET";

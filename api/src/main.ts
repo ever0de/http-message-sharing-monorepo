@@ -19,8 +19,8 @@ async function bootstrap() {
     const config = new DocumentBuilder()
         .setTitle("HTTP message sharing example")
         .setVersion("0.0.0")
-        .addTag(Example.PATH)
-        .addTag(Health.PATH)
+        .addTag(Example.PREFIX)
+        .addTag(Health.PREFIX)
         .build();
 
     const document = SwaggerModule.createDocument(app, config);

@@ -5,8 +5,8 @@ import { ApiResponse, ApiTags } from "@nestjs/swagger";
 
 import { HealthResponse } from "./response";
 
-@ApiTags(Health.PATH)
-@Controller(Health.PATH)
+@ApiTags(Health.PREFIX)
+@Controller(Health.PREFIX)
 export class HealthController {
     @GenerateMethod(Health.Root.METHOD)
     @ApiResponse({ status: 200, type: HealthResponse })

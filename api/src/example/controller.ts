@@ -7,8 +7,8 @@ import { ExampleQueryString } from "./request";
 import { ExampleResponse } from "./response";
 import { ExampleService } from "./service";
 
-@ApiTags(Example.PATH)
-@Controller(Example.PATH)
+@ApiTags(Example.PREFIX)
+@Controller(Example.PREFIX)
 export class ExampleController {
     constructor(private readonly exampleService: ExampleService) {}
 
