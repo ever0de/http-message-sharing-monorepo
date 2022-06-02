@@ -1,4 +1,4 @@
-import { Example, Health } from "@ever0de/http-message/lib/routes/root";
+import { Example, Health } from "@http-message/routes/root";
 import { NestFactory } from "@nestjs/core";
 import {
     FastifyAdapter,

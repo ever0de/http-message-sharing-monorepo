@@ -1,4 +1,4 @@
-import { Health } from "@ever0de/http-message/lib/routes/root";
+import { Health } from "@http-message/routes/root";
 import { ApiProperty } from "@nestjs/swagger";
 
 export class HealthResponse implements Health.Root.Response {

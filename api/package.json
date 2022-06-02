@@ -62,6 +62,7 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node",
     "moduleNameMapper": {
+      "@http-message/(.*)": "<rootDir>/../../http-message/src/$1",
       "@decorater/(.*)": "<rootDir>/decorater/$1"
     }
   }
