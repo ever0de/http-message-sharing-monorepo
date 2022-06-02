@@ -9,7 +9,15 @@ module.exports = {
     endOfLine: "lf",
 
     plugins: [require("@trivago/prettier-plugin-sort-imports")],
-    importOrder: ["<THIRD_PARTY_MODULES>", "@/(.*)$", "^[./](.*)$"],
+    importOrder: [
+        "<THIRD_PARTY_MODULES>",
+        "@/(.*)$",
+        "request|response",
+        "controller|service",
+        "^../(.*)$",
+        "^./(.*)$",
+        "(^../.*)types",
+    ],
     importOrderSeparation: true,
     importOrderSortSpecifiers: true,
     importOrderParserPlugins: ["typescript", "decorators-legacy"],

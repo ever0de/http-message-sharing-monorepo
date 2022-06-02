@@ -18,5 +18,6 @@ module.exports = {
     ignorePatterns: [".eslintrc.js"],
     rules: {
         "@typescript-eslint/no-namespace": "off",
+        "prettier/prettier": "off",
     },
 };
