@@ -1,11 +1,11 @@
-import { Range } from "./utils";
+import { Range } from "./utility-types";
 
 /**
  * range: 1000 ~ 9999
  *
- * 3xxx: 3rd party library | SAAS error
- * 4xxx: invalid params
- * 5xxx: data error (human error) | not exists row in database
+ * 3xxx: 3rd party library | SAAS error\
+ * 4xxx: invalid params\
+ * 5xxx: data error (human error) | not exists row in database\
  * 9xxx: admin error
  */
 export const enum APIErrorCode {
@@ -36,7 +36,7 @@ export interface APIError<
      */
     message: keyof typeof APIErrorCode;
     /**
-     * 4xx: Errors that can be handled separately by the client
+     * 4xx: Errors that can be handled separately by the client\
      * 5xx: check backend engineer
      */
     statusCode: StatusCode;
