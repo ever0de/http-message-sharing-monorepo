@@ -1,5 +1,5 @@
 import { GenerateMethod } from "@decorater/method";
-import { Health } from "@http-message/routes/root";
+import { Health } from "@ever0de/http-message/lib/routes/root";
 import { Controller } from "@nestjs/common";
 import { ApiResponse, ApiTags } from "@nestjs/swagger";
 

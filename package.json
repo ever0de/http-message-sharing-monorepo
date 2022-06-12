@@ -8,6 +8,7 @@
     "pnpm": "^7.1.5"
   },
   "scripts": {
+    "postinstall": "pnpm http-message build",
     "api": "pnpm --filter api",
     "http-message": "pnpm --filter http-message",
     "format": "prettier --write .",

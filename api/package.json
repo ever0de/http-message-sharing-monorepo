@@ -17,6 +17,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@ever0de/http-message": "workspace:*",
     "@nestjs/common": "^8.1.1",
     "@nestjs/core": "^8.1.1",
     "@nestjs/platform-fastify": "^8.4.5",
@@ -61,7 +62,6 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node",
     "moduleNameMapper": {
-      "@http-message/(.*)": "<rootDir>/../../http-message/src/$1",
       "@decorater/(.*)": "<rootDir>/decorater/$1"
     }
   }

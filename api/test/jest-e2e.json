@@ -7,7 +7,6 @@
     "^.+\\.ts$": "ts-jest"
   },
   "moduleNameMapper": {
-    "@http-message/(.*)": "<rootDir>/../../http-message/src/$1",
     "@decorater/(.*)": "<rootDir>/../src/decorater/$1"
   }
 }

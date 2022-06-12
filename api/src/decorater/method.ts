@@ -1,4 +1,4 @@
-import { Method } from "@http-message/method";
+import { Method } from "@ever0de/http-message/lib/method";
 import { Delete, Get, Options, Patch, Post, Put } from "@nestjs/common";
 
 export function GenerateMethod(

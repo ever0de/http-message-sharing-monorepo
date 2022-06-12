@@ -8,7 +8,6 @@
     "resolveJsonModule": true,
     "baseUrl": "src",
     "paths": {
-      "@http-message/*": ["../../http-message/src/*"],
       "@decorater/*": ["decorater/*"]
     }
   }
