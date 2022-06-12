@@ -1,7 +1,8 @@
 import { GenerateMethod } from "@decorater/method";
-import { Example } from "@ever0de/http-message/lib/routes/root";
 import { Controller, Query } from "@nestjs/common";
 import { ApiResponse, ApiTags } from "@nestjs/swagger";
+
+import { Example } from "@ever0de/http-message/lib/routes/root";
 
 import { ExampleQueryString } from "./request";
 import { ExampleResponse } from "./response";

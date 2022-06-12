@@ -12,6 +12,7 @@ module.exports = {
     importOrder: [
         "<THIRD_PARTY_MODULES>",
         "@/(.*)$",
+        "@ever0de/http-message",
         "request|response",
         "controller|service",
         "^../(.*)$",

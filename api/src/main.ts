@@ -1,10 +1,11 @@
-import { Example, Health } from "@ever0de/http-message/lib/routes/root";
 import { NestFactory } from "@nestjs/core";
 import {
     FastifyAdapter,
     NestFastifyApplication,
 } from "@nestjs/platform-fastify";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
+
+import { Example, Health } from "@ever0de/http-message/lib/routes/root";
 
 import { AppModule } from "./app.module";
 
