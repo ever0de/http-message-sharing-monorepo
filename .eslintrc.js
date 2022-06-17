@@ -18,6 +18,10 @@ module.exports = {
     ignorePatterns: [".eslintrc.js"],
     rules: {
         "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            { varsIgnorePattern: "^_" },
+        ],
         "prettier/prettier": "off",
     },
 };
